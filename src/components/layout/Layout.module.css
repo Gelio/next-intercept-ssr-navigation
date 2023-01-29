@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-block: 24px;
+}
+
+.header a {
+  font-size: 1.5rem;
+}
+
+.main {
+  max-width: 800px;
+  padding-inline: 24px;
+  margin: auto;
+  padding-block-end: 150px;
+}
+
+.github-link {
+  --filter-radius: 0px;
+  filter: drop-shadow(0px 0px var(--filter-radius) rgba(0, 0, 0, 0.5));
+  transition: filter 200ms ease-in-out;
+}
+
+.github-link:hover {
+  --filter-radius: 4px;
+}

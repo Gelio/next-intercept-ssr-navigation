@@ -1,0 +1,23 @@
+.button-container {
+  text-align: center;
+  margin-block-end: 24px;
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #d2e4c4;
+  border: none;
+  cursor: pointer;
+  --shadow-radius: 2px;
+  box-shadow: 2px 2px var(--shadow-radius) rgba(0, 0, 0, 0.5);
+  transition: box-shadow 200ms ease-in-out;
+}
+.button:hover {
+  --shadow-radius: 8px;
+}
+
+.pizza-name {
+  font-size: 1.5rem;
+}
