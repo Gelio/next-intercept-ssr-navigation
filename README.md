@@ -3,6 +3,8 @@
 Showcase how Next can be tricked into not fetching `getServerSideProps` for some
 client-side navigations.
 
+[CodeSandbox](https://codesandbox.io/p/github/Gelio/next-intercept-ssr-navigation)
+
 By default, Next will always fetch `getServerSideProps` result when navigating
 to a page that has it defined. This could be not intended in some
 highly-interactive web applications that need to offer instant client-side

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Main site</title>
+        <title>Next getServerSideProps navigation intercept</title>
       </Head>
 
       <Layout>
@@ -16,6 +16,18 @@ export default function Home() {
           This example app showcases how to hook into Next Router logic and
           avoid executing <code>getServerSideProps</code> when navigating to
           pages in the browser.
+        </p>
+
+        <p>
+          See the code{" "}
+          <a href="https://github.com/Gelio/next-intercept-ssr-navigation">
+            on GitHub
+          </a>{" "}
+          or{" "}
+          <a href="https://codesandbox.io/p/github/Gelio/next-intercept-ssr-navigation">
+            in CodeSandbox
+          </a>
+          .
         </p>
 
         <p>
