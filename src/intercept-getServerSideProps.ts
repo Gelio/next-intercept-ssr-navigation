@@ -7,6 +7,11 @@ export const useNextServerSidePropsInterception = ({
   enabled: boolean;
 }) => {
   useEffect(() => {
+    // NOTE: remove existing information about the /pizza route
+    // so Next does not "remember" whether it had getServerSideProps or not
+    // @see https://github.com/vercel/next.js/blob/13b32ba98179aa94ac2e402f272e5c6a3356d310/packages/next/src/shared/lib/router/router.ts#L971
+    delete SingletonRouter.router?.components["/pizza"];
+
     if (!enabled) {
       return;
     }
